@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://kh3msvgk0rf3"]
+
+[ext_resource type="Script" path="res://scripts/MainScene.gd" id="1_isk1n"]
+[ext_resource type="PackedScene" uid="uid://b6we84jol1e0c" path="res://scenes/spider.tscn" id="2_7w2sk"]
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_isk1n")
+
+[node name="Spider" parent="." instance=ExtResource("2_7w2sk")]
+
+[node name="rightLeg12" parent="Spider/body/skeleton/chest/rightLeg11" index="0"]
+rotation = 0.0
+
+[node name="leftLeg22" parent="Spider/body/skeleton/chest/leftLeg24" index="0"]
+rotation = 0.0
+scale = Vector2(1, 1)
+
+[node name="leftLeg23" parent="Spider/body/skeleton/chest/leftLeg24/leftLeg22" index="0"]
+rotation = 0.0
+
+[editable path="Spider"]
